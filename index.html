@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MAP701 Final Project</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Sans+Pro:wght@300&display=swap"
+    rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Sans+Pro:wght@300&display=swap');
+  </style>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="info-pane">
+    <h3>WWII Persuasive Cartography</h3>
+    <img src="images/ww2.jpg" width="300px" height="200px" id="current-image" alt="">
+    <p id="current-text">
+      Since there is a date range of 1940-1949 on this map, it is difficult to determine what the
+      overarching intention was, other than the content presented. By this, I mean, if this map
+      was produced in 1940, one could argue that it was a ploy to induce support for the US enrance
+      into the foreign conflict (prior to Pearl Harbor obviously). If it was produced after 1941, then
+      one could surmise that it's intent is merly to give perspective and scale to just how successful
+      and serious the German occupation was.
+      <br>
+      <br>
+      As noted in Tyner's <em>Persuasive Cartography</em>, WWII increased interest in maps, and the power
+      of propoganda and pursuasive narratives in cartography. Rererncing Hans Speier in Tyner's article,
+      he says that propoganda maps are used as "blueprints of the future". It is my opinion that a map
+      like this is surely intended to induce fear that the Germans could come to America and do the same
+      thing they'd been successful at doing on the Asian continent. A sort of "blueprint" for the minds of
+      ordinary people to help them understand the scale and reality of Germany's potential.
+      <br>
+      <br>
+      Through this interacive display, I will highlight some of the WWII battles that led to the German
+      victory and occupation. I'll also give you my opinions and how they relate to some of the course
+      readings.
+    </p>
+    <div id="button-cont">
+      <button id="pbutton" class="hide">Previous</button>
+      <button id="nbutton">Next</button>
+    </div>
+  </div>
+  <div id="map-cont">
+    <div id="iiif-map"></div>
+    <div id="current-view">
+      Current bounds:<br />
+      <div id="current-bounds"></div>
+    </div>
+    <!-- <div id="ui">
+      <button id="zoom-to-legend">Zoom in on the legend</button>
+    </div> -->
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <!-- make sure to import Leaflet-IIIF *after* the main Leaflet package -->
+  <script src="https://cdn.rawgit.com/mejackreed/Leaflet-IIIF/v3.0.0/leaflet-iiif.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

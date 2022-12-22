@@ -1,0 +1,76 @@
+ body {
+     margin: 0;
+     padding: 0;
+ }
+
+ #iiif-map {
+     position: absolute;
+     width: 100%;
+     top: 0;
+     bottom: 0;
+ }
+
+ #map-cont {
+    width: 70%;
+    position: absolute;
+    height: 100%;
+    right: 0;
+ }
+
+ #info-pane {
+    width: 30%;
+    background-color: maroon;
+    z-index: 2000;
+    position: absolute;
+    height: 100%;
+    border-right: solid black 10px;
+    text-align: center;
+ }
+
+ #button-cont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+
+ h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+ }
+
+ #current-text {
+    text-align: left;
+    margin: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+ }
+
+ #pbutton, #nbutton {
+    width: 76px;
+    height: 29px;
+    cursor: pointer;
+ }
+
+ .hide {
+   display: none;
+ }
+
+ #current-view {
+     position: absolute;
+     right: 60px;
+     top: 12px;
+     z-index: 1000;
+     background: whitesmoke;
+     padding: 8px 12px;
+ }
+
+ #ui {
+     position: absolute;
+     right: 12px;
+     bottom: 12px;
+     z-index: 1000;
+     background: whitesmoke;
+     padding: 8px 12px;
+ }
